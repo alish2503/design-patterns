@@ -34,7 +34,7 @@ public class PlotFactoriesTest {
         PlotFactory frozenPlotFactory = factories.contemporaryDisneyPlotFactory(() -> "Anna", () -> "her sister Elsa is overwhelmed by her magical powers", () -> "snowman Olaf");
         PlotFactory moanaPlotFactory = factories.contemporaryDisneyPlotFactory(() -> "Moana", () -> "a blight strikes the island", () -> "shape-shifting demigod Maui");
 
-        assertEquals(
+        assertEquals("Mulan plot mismatch",
                 "Mulan feels a bit awkward and uncomfortable. But personal issues fades, when a big trouble comes - Hun invasion. Mulan stands up against it, but with no success at first.But putting self together and help of friends, including spectacular funny little dragon Mushu restore the spirit and Mulan overcomes the crisis and gains gratitude and respect",
                 mulanPlotFactory.plot().toString()
         );
