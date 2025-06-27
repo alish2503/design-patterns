@@ -3,14 +3,14 @@
 ## Decorator
 **Decorator** is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
 
-Implementation of [`com.epam.rd.autocode.decorator.Decorators`](src\main\java\com\epam\rd\autocode\decorator\Decorators.java) method:
+Implementation of method:
 - `evenIndexElementsSubList` - returns a decorator, that manages only the elements with even indices in a source list. The decorated list should support the "read" methods:
     Decorated list should support "read" methods: `get()`, `size()`, `iterator()`.
     
 ## Factory
 **Abstract Factory** is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
 
-Implementation of [`com.epam.rd.autocode.factory.plot.PlotFactories`](src\main\java\com\epam\rd\autocode\factory\plot\PlotFactories.java) methods:
+Implementation of methods:
 - `classicDisneyPlotFactory` - returns a factory that creates a classic Disney plot (refer to test cases).
 - `contemporaryDisneyPlotFactory` - returns a factory that creates a contemporary Disney plot (refer to test cases).
 - `marvelPlotFactory` - returns a factory that creates a Marvel plot (refer to test cases).
@@ -18,7 +18,7 @@ Implementation of [`com.epam.rd.autocode.factory.plot.PlotFactories`](src\main\j
 ## Iterator
 **Iterator** is a behavioral design pattern that lets you traverse elements of a collection without exposing its underlying representation.
 
-Implementation of [`com.epam.rd.autocode.iterator.Iterators`](src\main\java\com\epam\rd\autocode\iterator\Iterators.java) methods:
+Implementation of methods:
 - `intArrayTwoTimesIterator` - returns an Iterator that iterates over given array but returns each array element 2 times.
 - `intArrayThreeTimesIterator` - returns an Iterator that iterates over given array but returns each array element 3 times.
 - `intArrayFiveTimesIterator` - returns an Iterator that iterates over given array but returns each array element 5 times.
@@ -27,7 +27,7 @@ Implementation of [`com.epam.rd.autocode.iterator.Iterators`](src\main\java\com\
 ## Observer
 **Observer** is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen with the object they’re observing.
 
-Implementation of [`com.epam.rd.autocode.observer.git.GitRepoObservers`](src\main\java\com\epam\rd\autocode\observer\git\GitRepoObservers.java) methods:
+Implementation of methods:
 - `newRepository` - returns a Repository. It supports commits to various branches and merges between branches.
 Also, it supports WebHooks - observers that observes commit or merge events.
 - `mergeToBranchWebHook` - returns a WebHook that observes merge events for a target branch.
@@ -46,7 +46,7 @@ The rest of the card deck becomes a "Remaining" stack.
 
 At first, cards are dealt to players, one per round and then cards are dealt to additional stacks and the remaining deck becomes a "Remaining" stack.
 
-Implementation [`com.epam.rd.autocode.startegy.cards.CardDealingStrategies`](src\main\java\com\epam\rd\autocode\startegy\cards\CardDealingStrategies.java) methods:
+Implementation of methods:
 - `texasHoldemCardDealingStrategy` - returns a CardDealingStrategy for Texas Hold'em Poker.
 2 cards per player, 5 cards in additional "Community" stack.
 - `classicPokerCardDealingStrategy` - returns a CardDealingStrategy for Classic Poker.
